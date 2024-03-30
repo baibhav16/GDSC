@@ -44,9 +44,9 @@ function App() {
           
           <button className='mx-4 bg-black rounded-lg px-2 outline-none text-white' onClick={() => openPopup('Link Syntax', <div className='text-bold text-red-500'>[Name](address)</div>)}>Link</button>
           
-          <button className='mx-4 bg-black rounded-lg px-2 outline-none text-white' onClick={() => openPopup('Details Title', 'Some details related to this button.')}>Image</button>
+          <button className='mx-4 bg-black rounded-lg px-2 outline-none text-white' onClick={() => openPopup('Image Syntax', '![This is an alt text.](https://images.shiksha.com/mediadata/images/1563772691phpODXTnl.jpg "This is a sample image.")')}>Image</button>
           
-          <button className='mx-4 bg-black rounded-lg px-2 outline-none text-white' onClick={() => openPopup('Details Title', 'Some details related to this button.')}>List</button>
+          <button className='mx-4 bg-black rounded-lg px-2 outline-none text-white' onClick={() => openPopup('List Syntax',<div> <h1> Unordered</h1> <div>Use * </div>  <h1>Ordered</h1> <div>Use 1,2,3.. </div>  </div>)}>List</button>
           
           
           {popupOpen && <Popup details={currentDetails} onClose={closePopup} />}
